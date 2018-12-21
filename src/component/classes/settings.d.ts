@@ -1,0 +1,31 @@
+import { Settings as ISettings, DevSettings as IDevSettings } from '../interfaces/index';
+export declare const defaultSettings: ISettings;
+export declare const minSettings: ISettings;
+export declare const defaultDevSettings: IDevSettings;
+export declare const minDevSettings: IDevSettings;
+export declare class Settings implements ISettings {
+    adapter: boolean;
+    startIndex: number;
+    minIndex: number;
+    maxIndex: number;
+    itemSize: number;
+    bufferSize: number;
+    padding: number;
+    infinite: boolean;
+    horizontal: boolean;
+    windowViewport: boolean;
+    debug: boolean;
+    immediateLog: boolean;
+    logTime: boolean;
+    throttle: number;
+    inertia: boolean;
+    inertiaScrollDelay: number;
+    inertiaScrollDelta: number;
+    initDelay: number;
+    initWindowDelay: number;
+    maxSynthScrollDelay: number;
+    instanceIndex: number;
+    initializeDelay: number;
+    constructor(settings: ISettings | undefined, devSettings: IDevSettings | undefined, instanceIndex: number);
+    getInitializeDelay(): number;
+}

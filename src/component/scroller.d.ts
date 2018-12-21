@@ -1,0 +1,30 @@
+import { Observable, Subscription } from 'rxjs';
+import { UiScrollComponent } from '../ui-scroll.component';
+import { Datasource } from './classes/datasource';
+import { Settings } from './classes/settings';
+import { Logger } from './classes/logger';
+import { Routines } from './classes/domRoutines';
+import { Viewport } from './classes/viewport';
+import { Buffer } from './classes/buffer';
+import { State } from './classes/state';
+import { CallWorkflow } from './interfaces/index';
+export declare class Scroller {
+    readonly runChangeDetector: Function;
+    readonly callWorkflow: CallWorkflow;
+    version: string;
+    datasource: Datasource;
+    settings: Settings;
+    logger: Logger;
+    routines: Routines;
+    viewport: Viewport;
+    buffer: Buffer;
+    state: State;
+    innerLoopSubscriptions: Array<Subscription>;
+    constructor(context: UiScrollComponent, callWorkflow: CallWorkflow);
+    init(): void;
+    bindData(): Observable<any>;
+    purgeInnerLoopSubscriptions(): void;
+    purgeScrollTimers(localOnly?: boolean): void;
+    dispose(): void;
+    finalize(): void;
+}

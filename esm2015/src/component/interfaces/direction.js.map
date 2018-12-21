@@ -1,0 +1,1 @@
+{"version":3,"file":"direction.js","sourceRoot":"","sources":["../../../package/src/component/interfaces/direction.ts"],"names":[],"mappings":";;;;;;IACE,SAAU,SAAS;IACnB,UAAW,UAAU","sourcesContent":["export enum Direction {\n  forward = 'forward',\n  backward = 'backward'\n}\n"]}

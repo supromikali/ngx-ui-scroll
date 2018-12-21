@@ -1,0 +1,1 @@
+{"version":3,"file":"ui-scroll.version.js","sourceRoot":"","sources":["../../src/ui-scroll.version.ts"],"names":[],"mappings":";;;;AAAA,eAAe,OAAO,CAAC","sourcesContent":["export default '1.0.1';\n"]}
