@@ -12,8 +12,8 @@ before_script:
 - sleep 3
 
 script:
-- npm run build
 - npm test
+- npm run build
 
 deploy:
   provider: pages
